@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/inicio"
+            android:icon="@drawable/c"
+            android:title="@string/inicio"
+           >
+
+        </item>
+    </group>
+
+
+    <group
+        android:id="@+id/grupo1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_solicitar"
+            android:icon="@drawable/l"
+            android:title="@string/solper" />
+        <item
+            android:id="@+id/nav_ver"
+            android:icon="@drawable/o"
+            android:title="@string/persoli" />
+        <item
+            android:id="@+id/nav_perfil"
+            android:icon="@drawable/u"
+            android:title="@string/perfil" />
+
+        <item android:title="@string/detalle">
+            <menu>
+                <item
+                    android:id="@+id/acerca"
+                    android:icon="@drawable/ayud"
+                    android:title="@string/acerca"/>
+            </menu>
+        </item>
+
+    </group>
+
+
+
+      <group
+          android:id="@+id/grupo2"
+          android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_permisoI"
+            android:icon="@drawable/l"
+            android:title="@string/solperI" />
+
+        <item
+            android:id="@+id/nav_VerIns"
+            android:icon="@drawable/o"
+            android:title="@string/permisosEs" />
+          <item android:title="@string/detalle">
+
+              <item
+                  android:id="@+id/nav_perfil1"
+                  android:icon="@drawable/u"
+                  android:title="@string/perfil" />
+              <menu>
+
+                  <item
+
+                      android:id="@+id/acerca2"
+                        android:icon="@drawable/ayud"
+                      android:title="@string/acerca"/>
+
+
+              </menu>
+          </item>
+
+          <group
+              android:checkableBehavior="single">
+              <item
+                  android:id="@+id/nav_cerrar2"
+                  android:icon="@drawable/salir"
+                  android:title="@string/cerar"/>
+          </group>
+
+    </group>
+
+</menu>

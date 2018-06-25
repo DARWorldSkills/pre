@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#24859a</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#34d5c8</color>
+    <color name="colorAzuloscuro">#24859a</color>
+    <color name="colorAzulclaro">#34d5c8</color>
+    <color name="colorgris">#e9f3f5</color>
+    <color name="gris">#b3c7ca</color>
+    <color name="espera">#FCF8E3</color>
+    <color name="aceptado">#D9EDF7</color>
+    <color name="rechazado">#F2DEDE</color>
+    <color name="finalizado">#DFF0D8</color>
+    <color name="cancelado">#F5F5F5</color>
+</resources>

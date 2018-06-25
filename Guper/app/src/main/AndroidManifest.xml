@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.davidpopayan.sena.guper">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logoguper"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logoguper"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Controllers.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".Controllers.splash"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Controllers.Login"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Controllers.DetalleListaInstruc"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Controllers.DetallePermisoAprendiz"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Controllers.ListaAprendices"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Controllers.CambioDeContrasena"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

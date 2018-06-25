@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">Guper</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Guper</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="datos">Datos Personales</string>
+    <string name="nombres">Nombres:</string>
+    <string name="apellidos">Apellidos:</string>
+    <string name="Telefono">Telefono:</string>
+    <string name="FechaDN">Fecha de nacimiento:</string>
+    <string name="Sexo">Sexo:</string>
+    <string name="Email">E-mail:</string>
+    <string name="contraseña">Contraseña:</string>
+    <string name="hecho">Guardar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="masculino">Masculino</string>
+    <string name="femenino">Femenino</string>
+    <string name="fecha">Fecha:</string>
+    <string name="Documento">Documento:</string>
+    <string name="Instructor">Instructor:</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="configuracion"> Configuracion de Perfil </string>
+    <string name="cambiarImagen"> Cambiar Imagen </string>
+    <string name="user">User</string>
+    <string name="password">Password</string>
+    <string name="hora">hh:mm:ss</string>
+    <string name="horato">hh</string>
+    <string name="SolicitoPermisoPor">Solicito Permiso por</string>
+    <string name="Enviar">Enviar</string>
+
+    <string name="solicitarficha">Solicitar Salida Ficha</string>
+    <string name="permisosespera">Permisos en Espera</string>
+    <string name="salida">Salida de Ficha</string>
+    <string name="Nficha">Numero de Ficha</string>
+    <string name="horahora">Hora:</string>
+    <string name="motivo">Motivo:</string>
+    <string name="solicitopermiso">Solicito Permiso por</string>
+    <string name="enviar">Enviar</string>
+
+    <string name="comprendido">Comprendido De:</string>
+    <string name="Detalle">Detalle</string>
+    <string name="permiso">Permiso</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="rechazar">Rechazar</string>
+
+    <string name="cerar">Cerrar Sesión</string>
+    <string name="acerca">Acerca de</string>
+    <string name="ayuda">Ayuda</string>
+    <string name="perfil">Perfil</string>
+    <string name="persoli">Permisos Solicitados</string>
+    <string name="solper">Solicitar Permiso</string>
+    <string name="solperI">Solicitar Permiso Ficha</string>
+    <string name="permisosEs">Permisos en espera</string>
+    <string name="detalle">Detalles</string>
+    <string name="inicio">Inicio</string>
+
+
+    <string name="bienvenido">Bienvenido a Guper</string>
+    <string name="salidaa">Hora de Salida:</string>
+
+
+    <string name="desarroladores">Desarrolladores</string>
+    <string name="movil">Movil</string>
+    <string name="web">Web</string>
+    <string name="sw">Servicios Web</string>
+    <string name="front">Front-end</string>
+    <string name="diseño">Diseño</string>
+    <string name="documentacion">Documentación</string>
+    <string name="prueba">Pruebas</string>
+    <string name="usuario">Usuario</string>
+    <string name="contrasena">Constraseña</string>
+    <string name="cambiarcontraseña">Cambiar Contraseña</string>
+    <string name="ficha">Ficha:</string>
+
+
+</resources>

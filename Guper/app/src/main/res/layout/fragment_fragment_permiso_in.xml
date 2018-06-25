@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.FragmentPermisoIn">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:contentPadding="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <ScrollView
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/raleway_black_italic"
+                        android:text="@string/salida"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAzuloscuro"
+                        android:textSize="20sp" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginBottom="4dp"
+                            android:fontFamily="@font/raleway_light"
+                            android:text="@string/ficha"
+                            android:textColor="@color/colorAzuloscuro"
+                            android:textSize="15sp" />
+
+                        <Spinner
+                            android:id="@+id/spinnerFichasIn"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginEnd="12dp">
+
+
+                        </Spinner>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/raleway_light"
+                            android:text="@string/fecha"
+                            android:textColor="@color/colorAzuloscuro"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/fechaDelDiaIn"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginEnd="12dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/raleway_light"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="16sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        tools:layout_editor_absoluteX="8dp"
+                        tools:layout_editor_absoluteY="189dp">
+
+                        <ImageButton
+                            android:id="@+id/btnHora1Instructor"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginEnd="12dp"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/horita"
+                            android:src="@mipmap/hora" />
+
+                        <EditText
+                            android:id="@+id/Hora1Instructor"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginEnd="62dp"
+                            android:enabled="false"
+                            android:fontFamily="@font/raleway_light"
+                            android:hint="@string/hora"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/raleway_light"
+                            android:text="@string/horahora"
+                            android:textColor="@color/colorAzuloscuro"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/raleway_light"
+                            android:text="@string/salidaa"
+                            android:textColor="@color/colorAzuloscuro"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/Hora2Instructor"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginEnd="62dp"
+                            android:enabled="false"
+                            android:fontFamily="@font/raleway_light"
+                            android:hint="@string/hora"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="16sp" />
+
+                        <ImageButton
+                            android:id="@+id/btnHora2Instructor"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginEnd="12dp"
+                            android:background="@drawable/horita"
+                            android:src="@mipmap/hora" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/raleway_light"
+                            android:text="@string/motivo"
+                            android:textColor="@color/colorAzuloscuro"
+                            android:textSize="16sp" />
+
+                        <Spinner
+                            android:id="@+id/spinnerMotivoIn"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="12dp">
+
+
+                        </Spinner>
+
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/raleway_light"
+                        android:text="@string/solicitopermiso"
+                        android:textColor="@color/colorAzuloscuro"
+                        android:textSize="16sp" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp">
+
+                        <EditText
+                            android:id="@+id/motivoporIn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:fontFamily="@font/raleway_light"
+                            android:textColor="@color/colorPrimaryDark" />
+
+
+                    </RelativeLayout>
+
+
+                    <Button
+                        android:id="@+id/btnEnviarPIn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="41dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/colorPrimary"
+                        android:fontFamily="@font/raleway_light"
+                        android:text="@string/enviar"
+                        android:textColor="#fff"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </ScrollView>
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

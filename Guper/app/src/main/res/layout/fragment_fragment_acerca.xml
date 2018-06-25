@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.FragmentAcerca">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:contentPadding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:fontFamily="@font/raleway_black_italic"
+                    android:text="@string/desarroladores"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAzuloscuro"
+                    android:textSize="17dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_medium"
+                    android:text="@string/movil"
+                    android:textColor="@color/colorAzuloscuro"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/raleway_light"
+                    android:text="David Alejandro Popayán Fernandez"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="43dp"
+                    android:fontFamily="@font/raleway_light"
+                    android:text="Rodrigo Alejandro Guspian Perez"
+                    android:textSize="12sp" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/colorAzuloscuro" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="148dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="@font/raleway_medium"
+                    android:text="@string/web"
+                    android:textColor="@color/colorAzuloscuro"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="29dp"
+                    android:fontFamily="@font/raleway_light"
+                    android:text="Cristian Gemay Nieto Nuñez"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="48dp"
+                    android:fontFamily="@font/raleway_light"
+                    android:text="Frankil Stiven Castro Susatama"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="67dp"
+                    android:fontFamily="@font/raleway_light"
+                    android:text="Alex Taquez Jalvin"
+                    android:textSize="12sp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="86dp"
+                    android:fontFamily="@font/raleway_light"
+                    android:text="Maira Alejandra Guzman Mapallo"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="105dp"
+                    android:fontFamily="@font/raleway_light"
+                    android:text="Yeferson Ernesto Calapsu Caldon"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="124dp"
+                    android:fontFamily="@font/raleway_light"
+                    android:text="Jhon Alexander Gaviria Dominguez"
+                    android:textSize="12sp" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/colorAzuloscuro" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="98dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/raleway_medium"
+                    android:text="@string/sw"
+                    android:textColor="@color/colorAzuloscuro"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="41dp"
+                    android:fontFamily="@font/raleway_light"
+                    android:text="Cristian Gemay Nieto Nuñez"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="60dp"
+                    android:fontFamily="@font/raleway_light"
+                    android:text="Frankil Stiven Castro Susatama"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="79dp"
+                    android:fontFamily="@font/raleway_light"
+                    android:text="Alex Taquez Jalvin"
+                    android:textSize="12sp" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/colorAzuloscuro" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="115dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/raleway_medium"
+                    android:text="@string/front"
+                    android:textColor="@color/colorAzuloscuro"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                   android:layout_marginTop="40dp"
+                    android:fontFamily="@font/raleway_light"
+                    android:text="Alex Taquez Jalvin"
+                    android:textSize="12sp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="59dp"
+                    android:fontFamily="@font/raleway_light"
+                    android:text="Maira Alejandra Guzman Mapallo"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="78dp"
+                    android:fontFamily="@font/raleway_light"
+                    android:text="Anyi Lorena Imbachi Zamora"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="97dp"
+                    android:fontFamily="@font/raleway_light"
+                    android:text="Miguel Alejandro Bernal Bolaños"
+                    android:textSize="12sp" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorAzuloscuro" />
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentStart="true"
+                 android:layout_alignParentTop="true"
+                 android:layout_marginTop="12dp"
+                 android:fontFamily="@font/raleway_medium"
+                 android:text="@string/diseño"
+                 android:textColor="@color/colorAzuloscuro"
+                 android:textSize="16sp" />
+
+
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentStart="true"
+                 android:layout_marginTop="40dp"
+                 android:fontFamily="@font/raleway_light"
+                 android:text="Carlos Antonio Ramos Hidalgo"
+                 android:textSize="12sp" />
+
+
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentStart="true"
+                 android:layout_marginTop="59dp"
+                 android:fontFamily="@font/raleway_light"
+                 android:text="Ingrid Yoslany Masabuel Certuche"
+                 android:textSize="12sp" />
+
+
+
+         </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/colorAzuloscuro" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/raleway_medium"
+                    android:text="@string/documentacion"
+                    android:textColor="@color/colorAzuloscuro"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="@font/raleway_light"
+                    android:text="Ana Maria Castaño Torijano"
+                    android:textSize="12sp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="59dp"
+                    android:fontFamily="@font/raleway_light"
+                    android:text="Neyitt Mapallo Mamian"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="78dp"
+                    android:fontFamily="@font/raleway_light"
+                    android:text="Sirley Johana Ordoñez Guevara"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="97dp"
+                    android:fontFamily="@font/raleway_light"
+                    android:text="Ana Patricia Viveros Caicedo"
+                    android:textSize="12sp" />
+
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorAzuloscuro" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/raleway_medium"
+                    android:text="@string/prueba"
+                    android:textColor="@color/colorAzuloscuro"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="@font/raleway_light"
+                    android:text="Yesica Alexandra Gallego Narvaez"
+                    android:textSize="12sp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="59dp"
+                    android:fontFamily="@font/raleway_light"
+                    android:text="Yurani Madroñero Cruz"
+                    android:textSize="12sp" />
+
+
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+        </ScrollView>
+
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>
