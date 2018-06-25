@@ -15,6 +15,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.NumberPicker;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -39,6 +40,7 @@ import com.davidpopayan.sena.guper.models.Rol;
 import com.davidpopayan.sena.guper.models.RolPersona;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.squareup.picasso.Picasso;
 
 import java.lang.reflect.Type;
 import java.text.DateFormat;
@@ -55,6 +57,7 @@ import java.util.Map;
  */
 public class FragmentPermiso extends Fragment implements View.OnClickListener{
     ImageButton btnHora1, btnHora11;
+    ImageView imagePer;
     EditText txtHora1,txtHoraT1;
     EditText txtSolicitarP;
     Button btnenviar;
@@ -99,8 +102,9 @@ public class FragmentPermiso extends Fragment implements View.OnClickListener{
         txtNombrePed = view.findViewById(R.id.txtNombreSP);
         txtDocumento = view.findViewById(R.id.txtdocumentoSP);
         txtfecha = view.findViewById(R.id.txtFechaSP);
+        imagePer = view.findViewById(R.id.imgPersonaP);
 
-
+        personaP = Login.personaT;
         listarMotivos();
 
 
@@ -111,6 +115,11 @@ public class FragmentPermiso extends Fragment implements View.OnClickListener{
         txtNombrePed.setText(Login.personaT.getNombres()+ " " + Login.personaT.getApellidos());
         txtDocumento.setText(Login.personaT.getDocumentoIdentidad());
         txtfecha.setText(dateFormat.format(date).toString());
+        if (personaP.getUrl().equals(null)) {
+            Picasso.with(getContext()).load(personaP.getImgPerfil()).into(imagePer);
+        }else {
+            Toast.makeText(mContext, "No tienes una imagen", Toast.LENGTH_SHORT).show();
+        }
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(getContext(),android.R.layout.simple_spinner_dropdown_item,MainActivity.instructorList);
         spinstructor.setAdapter(adapter);
@@ -128,6 +137,7 @@ public class FragmentPermiso extends Fragment implements View.OnClickListener{
         datos.add("Otro");
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter(getContext(),android.R.layout.simple_spinner_dropdown_item,datos);
         spMotivo.setAdapter(arrayAdapter);
+
     }
 
     @Override

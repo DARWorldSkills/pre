@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +16,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -30,7 +32,9 @@ import com.google.gson.reflect.TypeToken;
 import com.squareup.picasso.Picasso;
 
 import java.lang.reflect.Type;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import static android.app.Activity.RESULT_OK;
 
@@ -48,7 +52,7 @@ public class FragmentPerfil extends Fragment implements View.OnClickListener{
     boolean bandera1=false;
     boolean hiloB=true;
     int contador;
-
+    RequestQueue requestQueue;
     public FragmentPerfil() {
         // Required empty public constructor
     }
@@ -59,7 +63,7 @@ public class FragmentPerfil extends Fragment implements View.OnClickListener{
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_fragment_perfil, container, false);
-
+        requestQueue = Volley.newRequestQueue(getContext());
         imgPerfil = view.findViewById(R.id.ImgPerfil);
         btnCambiarP = view.findViewById(R.id.btnCambiarI);
         btnGuardar = view.findViewById(R.id.btnGuardar);
@@ -107,6 +111,7 @@ public class FragmentPerfil extends Fragment implements View.OnClickListener{
         cargarUsuario();
     }
 
+
     public void inizialite(View v){
 
         txtnombre = v.findViewById(R.id.txtNombrePerfil);
@@ -141,9 +146,42 @@ public class FragmentPerfil extends Fragment implements View.OnClickListener{
         switch (v.getId()){
 
             case R.id.btnGuardar:
-                Snackbar.make(v,"Se ha guardado correctamente",Snackbar.LENGTH_SHORT).show();
+                btnGuardar.setEnabled(false);
+                guardarTelefono(v);
+
                 break;
         }
+    }
+
+    private void guardarTelefono(final View v) {
+        StringRequest stringRequest = new StringRequest(Request.Method.PUT, Login.personaT.getUrl(), new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                Snackbar.make(v,"Se ha guardado correctamente",Snackbar.LENGTH_SHORT).show();
+                btnGuardar.setEnabled(true);
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Snackbar.make(v,"Error al guardar",Snackbar.LENGTH_SHORT).show();
+                btnGuardar.setEnabled(true);
+            }
+        }){
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String, String> parameters = new HashMap<>();
+                parameters.put("documentoIdentidad",Login.personaT.getDocumentoIdentidad());
+                parameters.put("nombres",Login.personaT.getNombres());
+                parameters.put("apellidos",Login.personaT.getApellidos());
+                Login.personaT.setTelefono(txttelefono.getText().toString());
+                parameters.put("telefono", Login.personaT.getTelefono());
+
+                parameters.put("usuario",Login.personaT.getUsuario());
+                return  parameters;
+            }
+        };
+        requestQueue.add(stringRequest);
+
     }
 
     public void cargarPerfil(){
@@ -181,6 +219,7 @@ public class FragmentPerfil extends Fragment implements View.OnClickListener{
         txttelefono.setText(personaP.getTelefono());
         txtdocumento.setText(personaP.getDocumentoIdentidad());
         txtemail.setText(userP.getEmail());
+
         if (bandera1==false) {
             Picasso.with(getContext()).load(personaP.getImgPerfil()).into(imgPerfil);
         }

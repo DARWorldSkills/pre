@@ -94,6 +94,7 @@ public class FragmentListarPermisosIn extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
     }
 
     @Override
@@ -110,8 +111,9 @@ public class FragmentListarPermisosIn extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-
+        listarAprendizPermiso();
     }
+
 
     @Override
     public void onStart() {
@@ -122,7 +124,7 @@ public class FragmentListarPermisosIn extends Fragment {
         aprendizFichaListA = new ArrayList<>();
         permisoListA = new ArrayList<>();
         super.onStart();
-        listarAprendizPermiso();
+
     }
 
     public void listarAprendizPermiso(){
@@ -137,9 +139,14 @@ public class FragmentListarPermisosIn extends Fragment {
                 AprendizPermiso aprendizPermiso = new AprendizPermiso();
                 for (int i=0; i<aprendizPermisoList.size(); i++){
                     aprendizPermiso = aprendizPermisoList.get(i);
-                    if (aprendizPermiso.getInstructor().equals(Integer.toString(Login.personaT.getId())) && aprendizPermiso.getEstado().equals("En Espera")){
-                        aprendizPermisoListA.add(aprendizPermiso);
+                    try {
+                        if (aprendizPermiso.getInstructor().equals(Integer.toString(Login.personaT.getId())) && aprendizPermiso.getEstado().equals("En Espera")){
+                            aprendizPermisoListA.add(aprendizPermiso);
+                        }
+                    }catch (Exception e){
+
                     }
+
                 }
                 listarPermisos();
             }
